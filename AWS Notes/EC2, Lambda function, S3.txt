@@ -1,0 +1,41 @@
+Root volume deletes with delation of EC2 instance.
+
+Security Group:
+We can only write rules to firewall at for incoming only.
+-> Inbound rule:
+Config traffic coming from...
+PORT, HTTP/HTTPS, Protocol, Port Range, source/ IP Address..
+
+=============
+
+
+AWS Lambda:
+1. Create function
+2. function name , runtime (python), create function
+
+====
+
+AWS s3:
+1. Create bucket
+2. Give name for bucket, some configurations (block/unblock public access)
+3. Upload files ..
+4. Review files and its specifications as storage, for pricing
+5. Deploy files.
+
+===
+1.can be used for web hosting, 
+2. stores all data as object. Each object within a bucket is stored as a key value pair
+3. Bucket name must be globally unique name
+4. Its region specific.
+5. Max 5 TB as single object.
+6. s3 bucket policies are created for give retrieve the access as follows:
+[JSON Policy in Bucket policy editor]
+1. GetObject: Used to retrieve or download files from an S3 bucket
+
+2. PutObject: Used to upload or add files into an S3 bucket.
+
+7. S3 versioning refers to change in files as like GitHub. For this Bucket versioning need to be enabled manually.
+
+8. S3 Replication: aws allows automatically copy objects from one bucket to another.
+Ex: did changes in bucket of Mumbai region, it will get sync with others region.
+
